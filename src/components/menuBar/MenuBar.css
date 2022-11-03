@@ -1,0 +1,64 @@
+.menu-container {
+  width: 200px;
+  height: 100%;
+  position: relative;
+  background-color: var(--white);
+}
+
+.menu-container-img {
+  padding: 32px 60px;
+}
+
+.menu-container-img img {
+  width: 80px;
+}
+
+.menu-container-button {
+  position: absolute;
+  width: 100%;
+  padding: 0 12px;
+  bottom: 32px;
+}
+
+.menu-container-button button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #fff2e7;
+  color: var(--orange-ff7506);
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+.menu-container-button button p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-left: 12px;
+}
+
+/* Menu option */
+.menu-option {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  width: 100%;
+  padding: 12px;
+  color: var(--gray-7E7D88);
+  cursor: pointer;
+}
+
+.menu-option:hover {
+  background-color: var(--orange-ff7506);
+  color: var(--white);
+}
+
+.menu-option-icon {
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.menu-option-title {
+  font-size: 16px;
+}
