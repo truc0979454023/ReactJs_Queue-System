@@ -1,0 +1,119 @@
+.topbar-container {
+  position: absolute;
+  min-width: calc(100vw - 200px);
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 64px 0 24px;
+  height: 88px;
+}
+
+.topbar-title {
+  color: var(--orange-ff7506);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.topbar-right {
+  display: flex;
+}
+
+.topbar-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: var(--orange-FFF2E7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+.topbar-icon span {
+  color: #ffac6a;
+}
+
+.topbar-right-info {
+  display: flex;
+}
+
+.topbar-right-avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-right: 8px;
+}
+
+.topbar-right-hello {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--gray-7E7D88);
+  margin: 0;
+}
+
+.topbar-right-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-535261);
+}
+
+/* Notify */
+
+.notify-container {
+  position: absolute;
+  top: 44px;
+  left: -88px;
+  width: 360px;
+  border: 10px;
+  background-color: var(--white);
+  z-index: 100;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px #ededed;
+}
+
+.notify-title {
+  padding: 10px 24px;
+  background-color: var(--orange-ff7506);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 10px 10px 0 0;
+}
+
+.notify-content {
+  border-radius: 0 0 10px 10px;
+}
+
+.notify-content-item {
+  padding: 10px 24px;
+}
+
+.notify-content-item:not(:last-child) {
+  border-bottom: 1px solid #d4d4d7;
+}
+
+.notify-content-item-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #bf5805;
+}
+
+.notify-content-item-content {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-535261);
+}

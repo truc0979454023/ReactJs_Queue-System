@@ -1,0 +1,82 @@
+.device {
+  margin-top: 88px;
+  padding: 24px 104px 20px 24px;
+  position: relative;
+}
+
+.device-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--orange-ff7506);
+  margin-bottom: 20px;
+}
+
+.device-container {
+}
+
+.device-container-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.device-container-filter {
+  display: flex;
+  gap: 24px;
+}
+
+.device-container-filter-item p,
+.device-container-search p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-282739);
+}
+
+.device-container-body {
+  margin-top: 24px;
+}
+
+.device-container-body-adddevice {
+  position: fixed;
+  right: 0;
+  top: 244px;
+  width: 80px;
+  height: 94px;
+  background-color: var(--orange-FFF2E7);
+  padding: 12px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.adddevice-icon {
+  width: 28px;
+  height: 28px;
+  background-color: var(--orange-ff7506);
+  color: var(--orange-FFF2E7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.device-container-body-adddevice p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--orange-ff7506);
+  text-align: center;
+}
+
+/* Table */
+.editable-row .ant-form-item-explain {
+  position: absolute;
+  top: 88px;
+  font-size: 12px;
+}

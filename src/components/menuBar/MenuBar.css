@@ -1,8 +1,12 @@
 .menu-container {
   width: 200px;
-  height: 100%;
-  position: relative;
+  height: 100vh;
   background-color: var(--white);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .menu-container-img {
@@ -39,6 +43,7 @@
 }
 
 /* Menu option */
+
 .menu-option {
   display: flex;
   align-items: center;
@@ -47,6 +52,7 @@
   padding: 12px;
   color: var(--gray-7E7D88);
   cursor: pointer;
+  position: relative;
 }
 
 .menu-option:hover {
@@ -61,4 +67,39 @@
 
 .menu-option-title {
   font-size: 16px;
+}
+
+.menu-suboption {
+  position: absolute;
+  right: -100%;
+  list-style: none;
+  top: 0;
+  background-color: var(--white);
+  width: 200px;
+  border-radius: 0px 12px 12px 0px;
+  box-shadow: 0px 0px 8px #ededed;
+  padding: 0;
+  display: none;
+}
+
+.menu-option:hover > .menu-suboption {
+  color: var(--gray-535261);
+  display: block;
+}
+
+.menu-suboption li {
+  padding: 12px 16px;
+}
+
+.menu-suboption li:first-child {
+  border-radius: 0 12px 0 0;
+}
+
+.menu-suboption li:last-child {
+  border-radius: 0 0 12px 0;
+}
+
+.menu-suboption li:hover {
+  background-color: var(--orange-ff7506);
+  color: var(--white);
 }

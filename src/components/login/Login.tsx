@@ -14,7 +14,10 @@ const Login: React.FC = () => {
     e.preventDefault();
     if (!username.trim() || !password) {
       setIsCheck(true);
-    } else setIsCheck(false);
+    } else {
+      setIsCheck(false);
+      localStorage.setItem("firstLogin", "true");
+    }
   };
 
   return (
